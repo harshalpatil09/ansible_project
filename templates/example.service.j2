@@ -1,0 +1,13 @@
+[Unit]
+Description=Flask App Example
+After=network.target
+
+[Service]
+Environment="INSTANCE_PATH={{ instance_path }}"
+ExecStart={{ deployment_dir }}/run.sh
+Restart=always
+User=www-data
+Group=www-data
+
+[Install]
+WantedBy=multi-user.target

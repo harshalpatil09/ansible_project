@@ -1,0 +1,10 @@
+port: 5000
+deployment_dir: "/opt/example"
+app_wheel_file: "Example-1.1.2-py3-none-any.whl"
+instance_path: "/opt/example/instance"
+secret_key: "dD9fp!&x4G3R@Z%tA$F8qKjm1!7yB0P#"
+db_path: "postgresql://example_user:myVerySecretDatabasePassword@localhost:5432/example_db"
+admin_groups:
+  - "Read-only"
+  - "Read-write"
+  - "Super"
